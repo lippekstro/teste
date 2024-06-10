@@ -1,0 +1,71 @@
+:root {
+    --cor-primaria: orange;
+    --cor-secundaria: purple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url('../imgs/grito.jpg');
+    background-repeat: no-repeat;
+}
+
+.azul {
+    color: var(--cor-secundaria);
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+#maiusculo {
+    text-transform: uppercase;
+}
+
+#italico {
+    font-style: italic;
+}
+/*  */
+.conteudo-sobre div p {
+    color: #ad0fec66;
+}
+
+div > p {
+    text-decoration: underline;
+}
+
+div + p {
+    color: green;
+}
+
+div ~ p {
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: yellow;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+p::selection {
+    background-color: yellow;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,9 @@
     <title>Meu primeiro HTML</title>
     <link rel="shortcut icon" href="../imgs/php_logo.png" type="image/x-icon">
 
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    
+
 </head>
 
 <body>
@@ -22,13 +19,13 @@
     <a href="sobre.html">SOBRE</a>
 
     
-    <p >
-        Olá Mundo.
+    <p class="azul">
+        <span style="color: red;">O</span>lá Mundo.
         SEi<br> la
 
     </p>
 
-    <pre >
+    <pre class="azul sublinhado" id="maiusculo">
         rosas sao vermelhas
         violetas sao azuis
     </pre>
@@ -51,6 +48,42 @@
     <a href="https://facebook.com">
         <img src="../imgs/php_logo.png" alt="" width="50px" height="50px">
     </a>
+
+    <ul>
+        <li>arroz</li>
+        <li>feijão</li>
+        <li>macarrão</li>
+    </ul>
+
+    <ol>
+        <li>Futebol</li>
+        <li>Basquete</li>
+        <li>Volei</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>html é uma linguagem de marcarcao</dd>
+        <dt>CSS</dt>
+        <dd>css é uma linguagem de estilização</dd>
+    </dl>
+
+    <table><!-- iniciando uma tabela -->
+        <tr><!-- linha da tabela -->
+            <th>nome</th><!-- cabecalhos das colunas -->
+            <th>idade</th>
+        </tr>
+
+        <tr>
+            <td>fulano</td><!-- dados das colunas -->
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>beltrano</td>
+            <td>30</td>
+        </tr>
+    </table>
 
 
 </body>
