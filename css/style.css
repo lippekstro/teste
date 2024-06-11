@@ -1,71 +1,112 @@
+/* criando variaveis de css */
 :root {
     --cor-primaria: orange;
     --cor-secundaria: purple;
 }
 
+/* modificando todos os elementos */
 * {
     margin: 0;
+    /* remove margens */
     padding: 0;
+    /* remove espacamentos internos */
     box-sizing: border-box;
+    /* calcula larguras automaticamente */
     font-family: serif;
+    /* define uma familia de fonte */
 }
 
+/* titulos h1 */
 h1 {
     font-size: 30px;
+    /* tamanho da fonte */
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* todos os titulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
+    /* alinhados ao centro */
 }
 
-
+/* o corpo da pagina */
 body {
     background-color: black;
+    /* fundo preto */
     color: white;
+    /* letra branca */
     background-image: url('../imgs/grito.jpg');
+    /* imagem de fundo */
     background-repeat: no-repeat;
+    /* sem repeticoes */
 }
 
+/* classe */
 .azul {
     color: var(--cor-secundaria);
+    /* muda a cor da letra para o valor da variavel */
 }
 
+/* classe */
 .sublinhado {
     text-decoration: underline;
+    /* adiciona o sublinhado */
 }
 
+/* id */
 #maiusculo {
     text-transform: uppercase;
+    /* deixa as letras todas maiusculas */
 }
 
+/* id */
 #italico {
     font-style: italic;
+    /* deixa a fonte em italico */
 }
-/*  */
+
+/* apenas os paragrafos DESCENDENTES de divs que estao dentro de um elemento com a classe conteudo-sobre */
 .conteudo-sobre div p {
     color: #ad0fec66;
+    /* cor da letra roxa */
 }
 
-div > p {
+/* paragrafos FILHOS de divs */
+div>p {
     text-decoration: underline;
+    /* sublinhado */
 }
 
-div + p {
+/* paragrafo irmao adjacente a uma div */
+div+p {
     color: green;
+    /* cor da letra */
 }
 
-div ~ p {
+/* todos os paragrafos irmaos de div */
+div~p {
     text-transform: uppercase;
+    /* tudo maiusculo */
 }
 
+/* passar o mouse sobre os links */
 a:hover {
     color: yellow;
+    /* cor da letra */
 }
 
+/* primeira letra dos paragrafos */
 p::first-letter {
     font-size: 50px;
+    /* tamanho da fonte */
 }
 
+/* selecionar um paragrafo */
 p::selection {
     background-color: yellow;
+    /* cor de fundo */
 }
