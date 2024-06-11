@@ -1,3 +1,6 @@
+/* importando uma fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
 /* criando variaveis de css */
 :root {
     --cor-primaria: orange;
@@ -12,7 +15,7 @@
     /* remove espacamentos internos */
     box-sizing: border-box;
     /* calcula larguras automaticamente */
-    font-family: serif;
+    font-family: "Tiny5", sans-serif;
     /* define uma familia de fonte */
 }
 
@@ -43,6 +46,7 @@ body {
     /* imagem de fundo */
     background-repeat: no-repeat;
     /* sem repeticoes */
+    margin: 2rem;
 }
 
 /* classe */
@@ -109,4 +113,103 @@ p::first-letter {
 p::selection {
     background-color: yellow;
     /* cor de fundo */
+}
+
+/* tabela titulos da tabela e dados da tabela */
+table, th, td {
+    border: 1px solid white; /* borda de 1pixel linha solida e branca */
+    border-radius: 10px; /* arredondando as bordas, collapse cancela isso */
+    border-collapse: collapse; /* juntando bordas duplas */
+    padding: 0.5rem; /* espacamento interno */
+}
+
+/* id */
+#foto-perfil {
+    border-radius: 50%; /* foto redonda */
+}
+
+/* id */
+#pai {
+    width: 50%; /* largura 50% */
+    height: 150px; /* altura */
+    background-color: gray; /* cor de fundo */
+    overflow: auto; /* transbordamento do conteudo */
+    position: relative; /* posicionamento relativo ao original */
+    top: 50px; /* distancia do topo */
+    left: 50px; /* distancia da esquerda */
+}
+
+/* classe */
+.exemplo {
+    width: 50%; /* largura */
+    height: 200px; /* altura */
+    background-color: aqua; /* cor de fundo */
+    position: relative; /* posicionamento relativo ao original */
+    top: 200px; /* distancia do topo */
+}
+
+/* classe */
+.absoluta {
+    width: 30px; /* largura */
+    height: 30px; /* altura */
+    background-color: blueviolet; /* cor do fundo */
+    position: absolute; /* posicionamento relativo ao pai */
+    top: 50px; /* distancia do topo */
+    left: 50px; /* distancia da esquerda */
+}
+
+/* classe */
+.ad {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: fixed; /* posicao fixa em relacao a tela */
+    top: 50%; /* distancia do topo */
+    left: 50%; /* distancia da esquerda */
+    transform: translate(-50%, -50%); /* reajuste em relacao a si mesmo */
+}
+
+/* selecioando a tag nav */
+nav {
+    position: sticky; /* posicionamento grudado */
+    top: 0; /* distancia do tipo, grudado na parte de cima da tela */
+}
+
+#img-texto {
+    float: right; /* flutuar para direita */
+    opacity: 0.5; /* transparencia */
+}
+
+/* elemento especifico quando sofrer hover */
+#img-texto:hover {
+    opacity: 1; /* transparencia */
+}
+
+#texto-img {
+    clear: both; /* limpar o float */
+}
+
+.caixa-flex {
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex; /* ligando o flexbox */
+    flex-direction: row; /* direcao dos filhos em linha */
+    flex-wrap: wrap; /* ajustar os itens quando nao houvr espaco */
+    justify-content: space-evenly; /* alinhamento horizontal */
+    align-items: start; /* alinhamento vertical */
+    align-content: space-between; /* alinhamento quando tem varias linhas de conteudo */
+
+}
+
+.caixa {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.maior {
+    height: 50px;
 }
