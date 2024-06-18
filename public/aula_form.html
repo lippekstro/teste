@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro HTML</title><!-- titulo da aba -->
+    <link rel="shortcut icon" href="../imgs/php_logo.png" type="image/x-icon"><!-- icone da aba -->
+
+    <!-- adicionando o google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="../css/style.css"><!-- conexao com o css -->
+</head>
+
+<body>
+    <!-- menu de navegacao -->
+    <a href="index.html"><span class="material-symbols-outlined">add_circle</span>INICIO</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="aula_form.html">FORMS</a>
+    <a href="aula_resp.html">RESPONSIVIDADE</a>
+
+    <section>
+        <form action="" enctype="multipart/form-data">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" value="Fulano" placeholder="Seu nome..." required>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" autofocus>
+
+            <label for="num">Numero</label>
+            <input type="number" name="numero" id="num">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="busca">Busca</label>
+            <input type="search" name="busca" id="busca">
+
+            <fieldset>
+                <legend>Qual sua linguagem favorita?</legend>
+
+                <input type="radio" name="lang" id="html" value="html">
+                <label for="html">HTML</label>
+
+                <input type="radio" name="lang" id="css" value="css">
+                <label for="css">CSS</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Como você chega no SENAC</legend>
+
+                <input type="checkbox" name="transporte[]" id="pe" value="pe">
+                <label for="pe">A Pé</label>
+
+                <input type="checkbox" name="transporte[]" id="onibus" value="onibus">
+                <label for="onibus">Onibus</label>
+            </fieldset>
+
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor">
+
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" min="2006-06-01">
+
+            <label for="foto">Foto de Perfil</label>
+            <input type="file" name="foto" id="foto" accept="image/*">
+
+            <input type="hidden" name="id" value="200">
+
+            <label for="tam">Selecione o tamanho da roupa</label>
+            <select name="tamanho-roupa" id="tam">
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="g" selected>G</option>
+            </select>
+
+            <textarea name="descricao" id="descricao" cols="10" rows="10"></textarea>
+
+
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+
+</html>

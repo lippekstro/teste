@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro HTML</title><!-- titulo da aba -->
+    <link rel="shortcut icon" href="../imgs/php_logo.png" type="image/x-icon"><!-- icone da aba -->
+
+    <!-- adicionando o google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="../css/style.css"><!-- conexao com o css -->
+</head>
+
+<body>
+    <!-- menu de navegacao -->
+    <a href="index.html"><span class="material-symbols-outlined">add_circle</span>INICIO</a>
+    <a href="sobre.html">SOBRE</a>
+    <a href="aula_form.html">FORMS</a>
+    <a href="aula_resp.html">RESPONSIVIDADE</a>
+    <hr>
+
+    <div>
+        <img src="../imgs/php_logo.png" alt="" width="100%" height="">
+    </div>
+    <div>
+        <img src="../imgs/grito.jpg" alt="" style="max-width: 100%;">
+    </div>
+    
+
+    <section>
+        <picture>
+            <source media="(max-width: 600px)" srcset="../imgs/goku_crianca.jpg">
+            <source media="(max-width: 900px)" srcset="../imgs/goku_adulto.jpg">
+            <source media="(max-width: 1200px)" srcset="../imgs/goku_ssj.png">
+            <img src="../imgs/goku_adulto.jpg" alt="" width="30%">
+        </picture>
+    </section>
+    
+    <hr>
+
+    <p style="font-size: 30px;">TEXTO NAO RESPONSIVO</p>
+    <p style="font-size: 2vw;">TEXTO RESPONSIVO</p>
+    <p style="font-size: clamp(15px, 2vw,25px);">TEXTO COM CLAMP</p>
+
+</body>
+</html>
